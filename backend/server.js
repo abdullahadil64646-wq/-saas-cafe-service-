@@ -13,8 +13,8 @@ app.use(helmet());
 
 // Rate Limiting
 const limiter = rateLimit({
-  windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 15 * 60 * 1000, // 15 minutes
-  max: parseInt(process.env.RATE_LIMIT_MAX) || 100, // limit each IP to 100 requests per windowMs
+  windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 15 * 60 * 1000,
+  max: parseInt(process.env.RATE_LIMIT_MAX) || 100,
   message: 'Too many requests from this IP, please try again later.'
 });
 app.use('/api/', limiter);
@@ -35,19 +35,19 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/saas_cafe_service', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 .then(() => console.log('✅ MongoDB Connected Successfully'))
 .catch(err => console.log('❌ MongoDB Connection Error:', err));
 
-// Routes
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/cafes', require('./routes/cafes'));
-app.use('/api/plans', require('./routes/plans'));
-app.use('/api/social', require('./routes/social'));
-app.use('/api/payments', require('./routes/payments'));
+// Routes - FIXED TO MATCH YOUR FILE STRUCTURE
+app.use('/api/auth', require('./api/auth'));
+app.use('/api/cafe', require('./api/cafe'));
+app.use('/api/plans', require('./api/plan'));
+app.use('/api/social', require('./api/socialmedia'));
+app.use('/api/payments', require('./api/payment'));
 
 // Health Check Route
 app.get('/api/health', (req, res) => {

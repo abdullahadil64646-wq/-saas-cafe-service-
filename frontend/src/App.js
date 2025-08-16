@@ -1,28 +1,28 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from '.Authcontext/context/AuthContext';
-import { AlertProvider } from './C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src\context\AlertContext';
-import PrivateRoute from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src\components\Routing\privateroute.js';
+import { AuthProvider } from './context/Authcontext';
+import { AlertProvider } from './context/Alertcontext';
+import PrivateRoute from './components/Routing/privateroute';
 
 // Layout Components
-import Navbar from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src\components\layout/Navbar';
-import Footer from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src\components\layout\Footer';
-import Alert from '.\components\layout\Alert';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/footer';
+import Alert from './components/layout/Alert';
 
 // Pages
-import Home from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/Home';
-import Register from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/auth/Register';
-import Login from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/auth/Login';
-import Dashboard from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/Dashboard';
-import Pricing from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/Pricing';
-import About from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/About';
-import Contact from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/Contact';
+import Home from './pages/Home';
+import Register from './pages/Auth/register';
+import Login from './pages/Auth/login';
+import Dashboard from './pages/Dashboard';
+import Pricing from './pages/pricing';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 // Private Pages
-import SocialMedia from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/SocialMedia';
-import WebStore from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/WebStore';
-import Profile from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/Profile';
-import Billing from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src/pages/Billing';
+import SocialMedia from './pages/Socialmedia';
+import WebStore from './pages/Webstore';
+import Profile from './pages/Profile';
+import Billing from './pages/Billing';
 
 import './App.css';
 

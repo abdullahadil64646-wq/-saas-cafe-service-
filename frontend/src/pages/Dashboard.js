@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Card, Row, Col, ListGroup, Badge, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { AuthContext } from '../context/AuthContext';
-import { AlertContext } from '../context/AlertContext';
+import { AuthContext } from './context/AuthContext';
+import { AlertContext } from './context/AlertContext';
 
 const Dashboard = () => {
   const { user, cafe } = useContext(AuthContext);
