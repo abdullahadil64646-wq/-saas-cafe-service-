@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
-import { useAuth } from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src\context/context/AuthContext';
+import { AuthContext } from '../context/Authcontext';
 
 const Profile = () => {
-  const { user } = useAuth();
+  const { user } = useContext(AuthContext);
 
   return (
     <Container className="mt-5">

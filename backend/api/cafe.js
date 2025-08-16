@@ -1,6 +1,6 @@
 const express = require('express');
-const Cafe = require('../models/Cafe');
-const { auth, adminOnly } = require('../utils/authMiddleware');
+const Cafe = require('../models/cafe');
+const { auth, adminOnly } = require('../utils/authmiddleware');
 
 const router = express.Router();
 

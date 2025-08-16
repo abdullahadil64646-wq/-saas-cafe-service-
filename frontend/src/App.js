@@ -20,7 +20,7 @@ import Contact from './pages/Contact';
 
 // Private Pages
 import SocialMedia from './pages/Socialmedia';
-import WebStore from './pages/Webstore';
+import WebStore from './pages/WebStore';
 import Profile from './pages/Profile';
 import Billing from './pages/Billing';
 
