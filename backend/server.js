@@ -48,6 +48,10 @@ app.use('/api/cafe', require('./api/cafe'));
 app.use('/api/plans', require('./api/plan'));
 app.use('/api/social', require('./api/socialmedia'));
 app.use('/api/payments', require('./api/payment'));
+app.use('/api/leads', require('./api/leads'));
+app.use('/api/campaigns', require('./api/campaigns'));
+app.use('/api/hashtags', require('./api/hashtags'));
+app.use('/api/analytics', require('./api/analytics'));
 
 // Health Check Route
 app.get('/api/health', (req, res) => {

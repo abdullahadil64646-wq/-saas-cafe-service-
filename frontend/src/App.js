@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/Authcontext';
 import { AlertProvider } from './context/Alertcontext';
@@ -23,6 +23,8 @@ import SocialMedia from './pages/Socialmedia';
 import WebStore from './pages/WebStore';
 import Profile from './pages/Profile';
 import Billing from './pages/Billing';
+import LeadManagement from './pages/LeadManagement';
+import Campaigns from './pages/Campaigns';
 
 import './App.css';
 
@@ -52,6 +54,16 @@ function App() {
                 <Route path="/social-media" element={
                   <PrivateRoute>
                     <SocialMedia />
+                  </PrivateRoute>
+                } />
+                <Route path="/campaigns" element={
+                  <PrivateRoute>
+                    <Campaigns />
+                  </PrivateRoute>
+                } />
+                <Route path="/leads" element={
+                  <PrivateRoute>
+                    <LeadManagement />
                   </PrivateRoute>
                 } />
                 <Route path="/web-store" element={

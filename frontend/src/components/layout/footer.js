@@ -21,9 +21,9 @@ const Footer = () => {
           <Col md={3}>
             <h6>Social</h6>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-light">Facebook</a></li>
-              <li><a href="#" className="text-light">Twitter</a></li>
-              <li><a href="#" className="text-light">Instagram</a></li>
+              <li><a href="https://facebook.com" className="text-light" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+              <li><a href="https://twitter.com" className="text-light" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              <li><a href="https://instagram.com" className="text-light" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             </ul>
           </Col>
         </Row>
