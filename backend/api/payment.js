@@ -1,8 +1,8 @@
 const express = require('express');
-const Payment = require('../models/Payment');
-const Cafe = require('../models/Cafe');
-const Plan = require('../models/Plan');
-const { auth } = require('../utils/authMiddleware');
+const Payment = require('../models/payment');
+const Cafe = require('../models/cafe');
+const Plan = require('../models/plan');
+const { auth } = require('../utils/authmiddleware');
 
 const router = express.Router();
 

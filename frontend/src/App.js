@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/Authcontext';
 import { AlertProvider } from './context/Alertcontext';
@@ -20,7 +20,7 @@ import Contact from './pages/Contact';
 
 // Private Pages
 import SocialMedia from './pages/Socialmedia';
-import WebStore from './pages/Webstore';
+import WebStore from './pages/WebStore';
 import Profile from './pages/Profile';
 import Billing from './pages/Billing';
 

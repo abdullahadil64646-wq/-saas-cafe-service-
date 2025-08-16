@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Form, Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
@@ -9,7 +9,7 @@ import { AlertContext } from '../../context/Alertcontext';
 const Register = () => {
   const { register } = useContext(AuthContext);
   const { setAlert } = useContext(AlertContext);
-  const history = useHistory();
+  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
   const validationSchema = Yup.object({
@@ -51,7 +51,7 @@ const Register = () => {
       
       if (result.success) {
         setAlert('Registration successful! Welcome to SaaS Cafe Service', 'success');
-        history.push('/dashboard');
+        navigate('/dashboard');
       } else {
         result.errors.forEach(error => setAlert(error.msg, 'danger'));
       }

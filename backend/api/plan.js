@@ -1,7 +1,7 @@
 const express = require('express');
-const Plan = require('../models/Plan');
-const Cafe = require('../models/Cafe');
-const { auth, adminOnly } = require('../utils/authMiddleware');
+const Plan = require('../models/plan');
+const Cafe = require('../models/cafe');
+const { auth, adminOnly } = require('../utils/authmiddleware');
 
 const router = express.Router();
 
