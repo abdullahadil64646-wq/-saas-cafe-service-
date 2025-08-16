@@ -1,7 +1,7 @@
 const express = require('express');
-const SocialPost = require('../models/SocialPost');
-const Cafe = require('../models/Cafe');
-const { auth } = require('../utils/authMiddleware');
+const SocialPost = require('../models/socialpost');
+const Cafe = require('../models/cafe');
+const { auth } = require('../utils/authmiddleware');
 const axios = require('axios');
 
 const router = express.Router();
