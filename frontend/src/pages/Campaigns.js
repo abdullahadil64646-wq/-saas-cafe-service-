@@ -4,7 +4,6 @@ import {
   Badge, Spinner, Tabs, Tab, ProgressBar
 } from 'react-bootstrap';
 import api from '../utils/api';
-import { AuthContext } from '../context/Authcontext';
 import { AlertContext } from '../context/Alertcontext';
 
 const Campaigns = () => {

@@ -5,7 +5,6 @@ import {
   ProgressBar, Dropdown
 } from 'react-bootstrap';
 import api from '../utils/api';
-import { AuthContext } from '../context/Authcontext';
 import { AlertContext } from '../context/Alertcontext';
 
 const SocialMedia = () => {
@@ -367,9 +366,9 @@ const SocialMedia = () => {
                   <Card.Header>💡 Recommendations</Card.Header>
                   <Card.Body>
                     {analytics.recommendations.slice(0, 3).map((rec, index) => (
-                      <Alert key={index} variant="info" className="py-2">
+                      <div key={index} className="alert alert-info py-2">
                         <small>{rec}</small>
-                      </Alert>
+                      </div>
                     ))}
                   </Card.Body>
                 </Card>
