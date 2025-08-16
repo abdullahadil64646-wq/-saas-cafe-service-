@@ -3,8 +3,8 @@ import { Link, useHistory } from 'react-router-dom';
 import { Form, Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { AuthContext } from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src\context\AuthContext';
-import { AlertContext } from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src\context\AlertContext';
+import { AuthContext } from '../../context/Authcontext';
+import { AlertContext } from '../../context/Alertcontext';
 
 const Register = () => {
   const { register } = useContext(AuthContext);

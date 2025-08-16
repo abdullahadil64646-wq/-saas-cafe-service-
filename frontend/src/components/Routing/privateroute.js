@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { Route, Redirect,Nevigate } from 'react-router-dom';
-import { AuthContext } from 'C:\Users\lenovo\Desktop\Abdullah\busnees\code\saas for cafes\-saas-cafe-service-\frontend\src\context/AuthContext';
+import { Route, Redirect, Navigate } from 'react-router-dom';
+import { AuthContext } from '../../context/Authcontext';
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const { isAuthenticated, loading } = useContext(AuthContext);
